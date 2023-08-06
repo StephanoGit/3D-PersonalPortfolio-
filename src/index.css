@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "neue-montreal";
+    src: url(./assets/fonts/Neue-montreal-free-demo_pangram-pangram_030418/NeueMontreal-Bold.otf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "neue-montreal";
+    src: url(./assets/fonts/Neue-montreal-free-demo_pangram-pangram_030418/NeueMontreal-Medium.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "neue-montreal";
+    src: url(./assets/fonts/Neue-montreal-free-demo_pangram-pangram_030418/NeueMontreal-Regular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "neue-montreal";
+    src: url(./assets/fonts/Neue-montreal-free-demo_pangram-pangram_030418/NeueMontreal-Light.otf);
+    font-weight: 300;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "neue-montreal";
+    font-weight: 400;
+    scroll-behavior: smooth;
+    color-scheme: dark;
+}
