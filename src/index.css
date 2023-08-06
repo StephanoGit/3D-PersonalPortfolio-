@@ -26,6 +26,12 @@
     font-weight: 300;
 }
 
+.stroke-text {
+    color: #cdc1b0;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 5px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -33,4 +39,8 @@
     font-weight: 400;
     scroll-behavior: smooth;
     color-scheme: dark;
+}
+
+:root{
+    background-color: #cdc1b0;
 }
