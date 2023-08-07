@@ -3,6 +3,8 @@ import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Social from "./components/Social";
+import About from "./components/About";
+
 
 import GrainyOverlay from "./components/GrainyOverlay";
 
@@ -16,9 +18,9 @@ const App = () => {
                     <Navbar/>
                 </div>
             </div>
-            <Hero />
+            <Hero/>
             <Social/>
-            {/* <About/> */}
+            <About/>
             {/* <Works/> */}
             {/* <Contact/> */}
         </GrainyOverlay>

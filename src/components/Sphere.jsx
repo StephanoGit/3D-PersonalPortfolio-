@@ -5,12 +5,12 @@ import CanvasLoader from './Loader';
 
 import {MeshStandardMaterial} from 'three';
 
-import vertexShader from '../../public/shaders/vertex_shader.glsl';
-import fragmentShader from '../../public/shaders/fragment_shader.glsl';
-import vertexPars from '../../public/shaders/vertex_pars.glsl';
-import vertexMain from '../../public/shaders/vertex_main.glsl';
-import fragmentPars from '../../public/shaders/fragment_pars.glsl';
-import fragmentMain from '../../public/shaders/fragment_main.glsl';
+import vertexShader from '../shaders/vertex_shader.glsl';
+import fragmentShader from '../shaders/fragment_shader.glsl';
+import vertexPars from '../shaders/vertex_pars.glsl';
+import vertexMain from '../shaders/vertex_main.glsl';
+import fragmentPars from '../shaders/fragment_pars.glsl';
+import fragmentMain from '../shaders/fragment_main.glsl';
 
 const material = new MeshStandardMaterial({
     onBeforeCompile: (shader) => {

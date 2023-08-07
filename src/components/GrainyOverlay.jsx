@@ -18,7 +18,7 @@ const GrainyOverlay = ({ children, alpha = 0.3 }) => {
     const drawNoise = () => {
       const imageData = ctx.createImageData(canvas.width, canvas.height);
       const data = imageData.data;
-      const maxColorValue = 50;
+      const maxColorValue = 60;
 
       for (let i = 0; i < data.length; i += 4) {
         const value = Math.random() * maxColorValue;
