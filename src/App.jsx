@@ -6,6 +6,8 @@ import Social from "./components/Social";
 import About from "./components/About";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+
 
 
 import Preloader from "./components/Preloader";
@@ -30,6 +32,7 @@ const App = () => {
               <About/>
             <Works/>
             <Contact/>
+            <Footer/>
         </GrainyOverlay>
     </BrowserRouter>
   );
