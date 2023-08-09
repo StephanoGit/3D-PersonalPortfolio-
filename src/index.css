@@ -43,4 +43,5 @@
 
 :root{
     background-color: #cdc1b0;
+    overflow-x: hidden !important;
 }

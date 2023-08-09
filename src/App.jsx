@@ -5,6 +5,8 @@ import Hero from "./components/Hero";
 import Social from "./components/Social";
 import About from "./components/About";
 import Works from "./components/Works";
+import Contact from "./components/Contact";
+
 
 import Preloader from "./components/Preloader";
 
@@ -27,7 +29,7 @@ const App = () => {
               <Social/>
               <About/>
             <Works/>
-            {/* <Contact/> */}
+            <Contact/>
         </GrainyOverlay>
     </BrowserRouter>
   );

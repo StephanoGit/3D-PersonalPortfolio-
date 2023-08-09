@@ -4,20 +4,24 @@ import { useDrag } from 'react-use-gesture'
 
 import styles from './styles.module.css'
 
-const cards = [
-  'https://upload.wikimedia.org/wikipedia/commons/f/f5/RWS_Tarot_08_Strength.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/5/53/RWS_Tarot_16_Tower.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/9/9b/RWS_Tarot_07_Chariot.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/690px-RWS_Tarot_02_High_Priestess.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/d/de/RWS_Tarot_01_Magician.jpg',
-]
-
 // const cards = [
-//   'src/assets/misc/polaroid_frame.png',
-//   'src/assets/misc/polaroid_frame.png',
-//   'src/assets/misc/polaroid_frame.png',
-//   'src/assets/misc/polaroid_frame.png',
+//   'https://upload.wikimedia.org/wikipedia/commons/f/f5/RWS_Tarot_08_Strength.jpg',
+//   'https://upload.wikimedia.org/wikipedia/commons/5/53/RWS_Tarot_16_Tower.jpg',
+//   'https://upload.wikimedia.org/wikipedia/commons/9/9b/RWS_Tarot_07_Chariot.jpg',
+//   'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/690px-RWS_Tarot_02_High_Priestess.jpg',
+//   'https://upload.wikimedia.org/wikipedia/commons/d/de/RWS_Tarot_01_Magician.jpg',
 // ]
+
+const cards = [
+  'src/assets/misc/projects/asteroids.png',
+  'src/assets/misc/projects/first-website.png',
+  'src/assets/misc/projects/kilburnazon-crud.png',
+  'src/assets/misc/projects/marss.png',
+  'src/assets/misc/projects/sts-bootcamp.png',
+  'src/assets/misc/projects/unihack-21.png',
+  'src/assets/misc/projects/unihack-22.png',
+  'src/assets/misc/projects/spotify-api.png',
+]
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
 const to = (i: number) => ({
@@ -30,7 +34,7 @@ const to = (i: number) => ({
 const from = (_i: number) => ({ x: 0, rot: 0, scale: 1.5, y: -1000 })
 // This is being used down there in the view, it interpolates rotation and scale into a css transform
 const trans = (r: number, s: number) =>
-  `perspective(1500px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`
+  `perspective(2000px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`
 
 const Deck = () => {
 
@@ -88,7 +92,7 @@ const Deck = () => {
           </animated.div>
         </animated.div>
       ))}
-      <div className='mt-[630px] border-tertiary text-3xl rounded-full text-tertiary bg-secondary border-2 p-3 text-center'><a href={cards[currentCard-1]} target='_blank'>CHECK ME OUT!</a></div>
+      <div className='mt-[480px] border-tertiary text-2xl rounded-full text-tertiary bg-secondary border-2 p-3 text-center'><a href={cards[currentCard-1]} target='_blank'>SEE MORE</a></div>
       {/* <div className='text-center mt-4'>
         Current Card: {currentCard}
       </div> */}
