@@ -5,13 +5,11 @@ import { ReactComponent as Wave }from '../assets/misc/wave.svg';
 
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm("xjvqygdp");
-  if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
-  }
+    const [state, handleSubmit] = useForm("xjvqygdp");
+
   return (
     <div className='w-[90%] mx-auto my-[50px]'>
-        <div className='flex flex-row bg-secondary px-4'>
+        <div className='flex flex-row bg-secondary px-4 py-2'>
             <span className='w-2/3 text-4xl text-primary flex items-center'>SAY HELLO!</span>
             <Wave className='w-1/3 h-[60px]'></Wave>
         </div>
@@ -28,8 +26,8 @@ const Contact = () => {
             <textarea id="message" name="message" placeholder='MESSAGE' required className='bg-primary border-x-4 border-b-4 border-secondary text-3xl p-2 text-secondary placeholder-secondary'></textarea>
             <ValidationError prefix="Message" field="message" errors={state.errors} />
 
-            <button type="submit" disabled={state.submitting} className='bg-tertiary text-right w-2/3 mt-3 text-3xl py-2 px-4 text-secondary'>
-                SUBMIT
+            <button type="submit" disabled={state.submitting} className='bg-tertiary text-right w-1/2 mt-3 text-3xl py-2 px-4 text-secondary'>
+                {state.succeeded ? <span>SENT</span> : <span>SUBMIT</span>}
             </button>
             <ValidationError errors={state.errors} />
         </form>
