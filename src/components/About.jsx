@@ -37,12 +37,6 @@ const About = () => {
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
             
             <div className='mx-auto flex flex-col lg:flex-row'>
                 <div className='w-full border-4 border-secondary text-secondary p-8 text-justify'>

@@ -19,8 +19,8 @@ const Works = () => {
                 <Deck />
             </div>
             <Marquee autoFill={true} className='border-4 border-primary p-2'>
-                <div className='flex flex-row'><span className='mx-4 font-medium text-6xl text-primary'>PROJECTS</span>
-                <Arrow className='w-16 fill-tertiary rotate-90'/>
+                <div className='flex flex-row'><span className='mx-4 font-medium text-6xl text-primary'>EXPERIENCE</span>
+                <Arrow className='w-16 fill-tertiary -rotate-90'/>
                 </div>
             </Marquee>
         </div>

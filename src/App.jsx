@@ -14,6 +14,7 @@ import Preloader from "./components/Preloader";
 
 
 import GrainyOverlay from "./components/GrainyOverlay";
+import Experience from "./components/Experience";
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
               <Social/>
               <About/>
             <Works/>
+            <Experience/>
             <Contact/>
             <Footer/>
         </GrainyOverlay>
