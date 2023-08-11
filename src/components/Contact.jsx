@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import Marquee from "react-fast-marquee";
 import { ReactComponent as Wave }from '../assets/misc/wave.svg';
+import SectionWrapper from '../hoc/SectionWrapper';
 
 
 const Contact = () => {
@@ -35,4 +36,4 @@ const Contact = () => {
   );
 }
 
-export default Contact
+export default SectionWrapper(Contact, 'contact')

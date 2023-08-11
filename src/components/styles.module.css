@@ -28,11 +28,35 @@
     background-repeat: no-repeat;
     background-position: center center;
     width: 45vh;
-    max-width: 300px;
+    max-width: 250px;
     height: 85vh;
-    max-height: 500px;
+    max-height: 370px;
     will-change: transform;
     border-radius: 10px;
     /* box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3); */
   }
+
+  .bttn {
+    margin-top: 480px;
+    border-color: #ec5b2d;
+    font-size: 1.5rem; /* Equivalent to text-2xl in Tailwind */
+    border-radius: 9999px; /* Equivalent to rounded-full in Tailwind */
+    color: #ec5b2d;
+    background-color: #1e1e1e;
+    border-width: 2px;
+    padding: 0.75rem; /* Equivalent to p-3 in Tailwind */
+    text-align: center;
+  }
+
   
+
+  @media (min-width: 425px) {
+    .deck > div {
+      max-width: 300px;
+      max-height: 550px;
+    }
+
+    .bttn {
+      margin-top: 520px !important;
+    }
+}

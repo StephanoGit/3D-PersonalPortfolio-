@@ -4,21 +4,12 @@ import Marquee from "react-fast-marquee";
 
 import cvQR from '../assets/qrs/cv-qr.svg';
 import {ReactComponent as Arrow} from '../assets/caret-back-outline.svg';
+import SectionWrapper from '../hoc/SectionWrapper';
 
+import { skills } from '../constants/index.js';
 
 
 const About = () => {
-    const divs = [
-        {
-          x: 100,
-          y: 100,
-        },
-        {
-          x: 200,
-          y: 200,
-        },
-      ];
-
     return (
         <div className='mx-auto w-[90%] mt-16 flex flex-col gap-4'>
             <div className='bg-secondary flex flex-col-reverse lg:flex-row p-3'>
@@ -41,8 +32,8 @@ const About = () => {
             <div className='mx-auto flex flex-col lg:flex-row'>
                 <div className='w-full border-4 border-secondary text-secondary p-8 text-justify'>
                     <p className='font-medium text-xl sm:text-3xl font-'>
-                        Hi There! My name is <mark className='text-tertiary bg-transparent'>Radu-Stefan Popovici</mark>
-                        and I am a 3rd year Computer Science student at <a href='https://www.manchester.ac.uk/' className='text-tertiary bg-transparent underline'>The Univeristy of Manchester</a>
+                        Hi There! My name is <mark className='text-tertiary bg-transparent'>Radu-Stefan Popovici</mark> and
+                        I am a 3rd year Computer Science student at <a href='https://www.manchester.ac.uk/' className='text-tertiary bg-transparent underline'>The Univeristy of Manchester</a>
                         , in the United Kingdom. Currently working on becoming a <mark className='text-tertiary bg-transparent'>self-taught fullstack developer</mark>, but my ultimate
                         goal is to become an engineer in the <mark className='text-tertiary bg-transparent'>computer vision, pattern recognition and deep-learning</mark> industry.
                         I am passionate about design, AI, computer vision and robotics.<br/><br/>
@@ -52,22 +43,9 @@ const About = () => {
                 </div>
                 <div className="lg:w-1/2 border-4 border-secondary w-full bg-[url('src/assets/misc/vector_grid.png')] object-contain bg-cover bg-no-repeat bg-center flex justify-center items-center">
                     <div className='grid grid-cols-3 gap-4 my-5'>
-                        <div className='col-start-1 col-end-2 border-tertiary rounded-full text-tertiary bg-secondary border-2 px-2 text-center'>React</div>
-                        <div className='border-tertiary rounded-full text-tertiary bg-secondary border-2 px-2 text-center'>HTML5</div>
-                        <div className='border-tertiary rounded-full text-tertiary bg-secondary border-2 px-2 text-center'>Git</div>
-
-                        <div className='col-span-2 border-tertiary rounded-full text-tertiary bg-secondary border-2 px-2 text-center'>CSS/Tailwind/BootStrap</div>
-                        <div className='border-tertiary rounded-full text-tertiary bg-secondary border-2 px-2 text-center'>C/C++</div>
-
-                        <div className='border-tertiary rounded-full text-tertiary bg-secondary border-2 px-2 text-center'>Python</div>
-                        <div className='border-tertiary rounded-full text-tertiary bg-secondary border-2 px-2 text-center'>Django</div>
-                        <div className='border-tertiary rounded-full text-tertiary bg-secondary border-2 px-2 text-center'>Flask</div>
-
-                        <div className='border-tertiary rounded-full text-tertiary bg-secondary border-2 px-2 text-center'>MySQL</div>
-                        <div className='border-tertiary rounded-full text-tertiary bg-secondary border-2 px-2 text-center'>Java</div>
-                        <div className='border-tertiary rounded-full text-tertiary bg-secondary border-2 px-2 text-center'>Django</div>
-
-
+                        {skills.map((skill, index) => 
+                            <div key={index} className='border-tertiary rounded-full text-tertiary bg-secondary border-2 px-2 text-center'>{skill}</div>
+                        )}
                     </div>
                 </div>
             </div>
@@ -75,4 +53,4 @@ const About = () => {
     )
 }
 
-export default About
+export default SectionWrapper(About, 'about');

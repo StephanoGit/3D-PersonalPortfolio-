@@ -8,11 +8,33 @@ export const navLinks = [
       title: "PROJECTS",
     },
     {
+      id: "experince",
+      title: "EXPERIENCE",
+    },
+    {
       id: "contact",
       title: "CONTACT",
     },
   ];
-  
+
+export const skills = [
+  'React',
+  'HTML5',
+  'CSS',
+  'JS',
+  'Tailwind',
+  'Bootstrap',
+  'Django',
+  'Flask',
+  'Git',
+  'Python',
+  'C/C++',
+  'Java',
+  'SpringBoot',
+  'MySQL',
+  'Algos.',
+  'DataStr.',
+]
   
 export const experiences = [
     {

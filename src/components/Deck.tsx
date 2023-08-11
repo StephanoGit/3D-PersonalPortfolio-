@@ -4,14 +4,6 @@ import { useDrag } from 'react-use-gesture'
 
 import styles from './styles.module.css'
 
-// const cards = [
-//   'https://upload.wikimedia.org/wikipedia/commons/f/f5/RWS_Tarot_08_Strength.jpg',
-//   'https://upload.wikimedia.org/wikipedia/commons/5/53/RWS_Tarot_16_Tower.jpg',
-//   'https://upload.wikimedia.org/wikipedia/commons/9/9b/RWS_Tarot_07_Chariot.jpg',
-//   'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/690px-RWS_Tarot_02_High_Priestess.jpg',
-//   'https://upload.wikimedia.org/wikipedia/commons/d/de/RWS_Tarot_01_Magician.jpg',
-// ]
-
 const cards = [
   'src/assets/misc/projects/asteroids.png',
   'src/assets/misc/projects/first-website.png',
@@ -21,6 +13,17 @@ const cards = [
   'src/assets/misc/projects/unihack-21.png',
   'src/assets/misc/projects/unihack-22.png',
   'src/assets/misc/projects/spotify-api.png',
+]
+
+const links = [
+  'https://github.com/StephanoGit/AsteroidsGame',
+  'https://github.com/StephanoGit/PersonalWebsite',
+  '/#',
+  'https://github.com/StephanoGit/UoM-1st-Year-Project',
+  'https://github.com/StephanoGit/BootcampSTS_website',
+  'https://github.com/StephanoGit/UniHack-2021',
+  'https://devpost.com/software/moneyonballs',
+  'https://github.com/StephanoGit/spotify-api-music-recommendation',
 ]
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
@@ -92,10 +95,7 @@ const Deck = () => {
           </animated.div>
         </animated.div>
       ))}
-      <div className='mt-[480px] border-tertiary text-2xl rounded-full text-tertiary bg-secondary border-2 p-3 text-center'><a href={cards[currentCard-1]} target='_blank'>SEE MORE</a></div>
-      {/* <div className='text-center mt-4'>
-        Current Card: {currentCard}
-      </div> */}
+      <div className={styles.bttn}><a href={links[currentCard-1]} target='_blank'>SEE MORE</a></div>
     </>
   )
 }

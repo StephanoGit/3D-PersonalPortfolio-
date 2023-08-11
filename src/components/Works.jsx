@@ -3,6 +3,7 @@ import Marquee from "react-fast-marquee";
 
 import globe from '../assets/misc/globe.webm';
 import {ReactComponent as Arrow} from '../assets/caret-back-outline.svg';
+import SectionWrapper from '../hoc/SectionWrapper';
 
 import Deck from './Deck'
 import styles from './styles.module.css'
@@ -27,4 +28,4 @@ const Works = () => {
     )
 }
 
-export default Works
+export default SectionWrapper(Works, 'work')
