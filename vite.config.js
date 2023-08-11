@@ -11,6 +11,5 @@ export default defineConfig({
         // svgr options
       },
     }),
-  ],
-  base: "/3D-PersonalPortfolio-/"
+  ]
 })
