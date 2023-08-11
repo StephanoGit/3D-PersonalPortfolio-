@@ -1,6 +1,6 @@
 .container {
     background: #1e1e1e;
-    background-image: url('src/assets/misc/grid-primary.svg');
+    background-image: url('/src/assets/misc/grid-primary.svg');
     /* background-repeat: repeat-y; */
     cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 39 39,
       auto;

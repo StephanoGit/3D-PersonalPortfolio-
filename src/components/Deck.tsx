@@ -5,14 +5,14 @@ import { useDrag } from 'react-use-gesture'
 import styles from './styles.module.css'
 
 const cards = [
-  'src/assets/misc/projects/asteroids.png',
-  'src/assets/misc/projects/first-website.png',
-  'src/assets/misc/projects/kilburnazon-crud.png',
-  'src/assets/misc/projects/marss.png',
-  'src/assets/misc/projects/sts-bootcamp.png',
-  'src/assets/misc/projects/unihack-21.png',
-  'src/assets/misc/projects/unihack-22.png',
-  'src/assets/misc/projects/spotify-api.png',
+  '/src/assets/misc/projects/asteroids.png',
+  '/src/assets/misc/projects/first-website.png',
+  '/src/assets/misc/projects/kilburnazon-crud.png',
+  '/src/assets/misc/projects/marss.png',
+  '/src/assets/misc/projects/sts-bootcamp.png',
+  '/src/assets/misc/projects/unihack-21.png',
+  '/src/assets/misc/projects/unihack-22.png',
+  '/src/assets/misc/projects/spotify-api.png',
 ]
 
 const links = [

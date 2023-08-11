@@ -11,7 +11,7 @@ import SectionWrapper from '../hoc/SectionWrapper.jsx';
 
 const Experience = () => {
   return (
-    <div className="bg-secondary bg-[url('src/assets/misc/vector-wave.svg')] bg-center bg-no-repeat">
+    <div className="bg-secondary bg-[url('/src/assets/misc/vector-wave.svg')] bg-center bg-no-repeat">
         <div className='h-16'></div>
         <div className='flex flex-col gap-8 lg:items-end w-[90%] mx-auto'>
             {experiences.map((exp, i) => (

@@ -41,7 +41,7 @@ const About = () => {
                         my mates!
                     </p>
                 </div>
-                <div className="lg:w-1/2 border-4 border-secondary w-full bg-[url('src/assets/misc/vector_grid.png')] object-contain bg-cover bg-no-repeat bg-center flex justify-center items-center">
+                <div className="lg:w-1/2 border-4 border-secondary w-full bg-[url('/src/assets/misc/vector_grid.png')] object-contain bg-cover bg-no-repeat bg-center flex justify-center items-center">
                     <div className='grid grid-cols-3 gap-4 my-5'>
                         {skills.map((skill, index) => 
                             <div key={index} className='border-tertiary rounded-full text-tertiary bg-secondary border-2 px-2 text-center'>{skill}</div>
