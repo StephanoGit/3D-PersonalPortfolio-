@@ -4,21 +4,31 @@ import { useDrag } from 'react-use-gesture'
 
 import styles from './styles.module.css'
 
+import asteroids from '../assets/misc/projects/asteroids.png';
+import firstWebsite from '../assets/misc/projects/first-website.png';
+import kilburnazon from '../assets/misc/projects/kilburnazon-crud.png';
+import marss from '../assets/misc/projects/marss.png';
+import bootcamp from '../assets/misc/projects/sts-bootcamp.png';
+import unihack21 from '../assets/misc/projects/unihack-21.png';
+import unihack22 from '../assets/misc/projects/unihack-22.png';
+import spotify from '../assets/misc/projects/spotify-api.png';
+
+
 const cards = [
-  '/src/assets/misc/projects/asteroids.png',
-  '/src/assets/misc/projects/first-website.png',
-  '/src/assets/misc/projects/kilburnazon-crud.png',
-  '/src/assets/misc/projects/marss.png',
-  '/src/assets/misc/projects/sts-bootcamp.png',
-  '/src/assets/misc/projects/unihack-21.png',
-  '/src/assets/misc/projects/unihack-22.png',
-  '/src/assets/misc/projects/spotify-api.png',
+  asteroids,
+  firstWebsite,
+  kilburnazon,
+  marss,
+  bootcamp,
+  unihack21,
+  unihack22,
+  spotify
 ]
 
 const links = [
   'https://github.com/StephanoGit/AsteroidsGame',
   'https://github.com/StephanoGit/PersonalWebsite',
-  '/#',
+  '#',
   'https://github.com/StephanoGit/UoM-1st-Year-Project',
   'https://github.com/StephanoGit/BootcampSTS_website',
   'https://github.com/StephanoGit/UniHack-2021',
