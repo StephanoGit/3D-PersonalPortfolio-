@@ -7,6 +7,7 @@ import {ReactComponent as Arrow} from '../assets/caret-back-outline.svg';
 import SectionWrapper from '../hoc/SectionWrapper';
 
 import { skills } from '../constants/index.js';
+import cv_pdf from '../assets/misc/CV.pdf';
 
 
 const About = () => {
@@ -14,7 +15,7 @@ const About = () => {
         <div className='mx-auto w-[90%] mt-16 flex flex-col gap-4'>
             <div className='bg-secondary flex flex-col-reverse lg:flex-row p-3'>
                 <div className='w-full '>
-                    <a href='/src/assets/misc/CV.pdf' target='_blank'><img src={cvQR} className='w-full object-contain cursor-pointer'/></a>
+                    <a href={cv_pdf} target='_blank'><img src={cvQR} className='w-full object-contain cursor-pointer'/></a>
                 </div>
                 <div className='flex flex-col w-full justify-between lg:ml-3'>
                     <Marquee autoFill={true}>
@@ -33,7 +34,7 @@ const About = () => {
                 <div className='w-full border-4 border-secondary text-secondary p-8 text-justify'>
                     <p className='font-medium text-xl sm:text-3xl font-'>
                         Hi There! My name is <mark className='text-tertiary bg-transparent'>Radu-Stefan Popovici</mark> and
-                        I am a 3rd year Computer Science student at <a href='https://www.manchester.ac.uk/' className='text-tertiary bg-transparent underline'>The Univeristy of Manchester</a>
+                        I am a 3rd year Computer Science student at <a href='https://www.manchester.ac.uk/' target="_blank" className='text-tertiary bg-transparent underline'>The Univeristy of Manchester</a>
                         , in the United Kingdom. Currently working on becoming a <mark className='text-tertiary bg-transparent'>self-taught fullstack developer</mark>, but my ultimate
                         goal is to become an engineer in the <mark className='text-tertiary bg-transparent'>computer vision, pattern recognition and deep-learning</mark> industry.
                         I am passionate about design, AI, computer vision and robotics.<br/><br/>
