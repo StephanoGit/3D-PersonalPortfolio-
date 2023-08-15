@@ -2,15 +2,23 @@ import React, { useState } from 'react'
 import { useSprings, animated, to as interpolate } from '@react-spring/web'
 import { useDrag } from 'react-use-gesture'
 
+// @ts-ignore
 import styles from './styles.module.css'
-
+// @ts-ignore
 import asteroids from '../assets/misc/projects/asteroids.png';
+// @ts-ignore
 import firstWebsite from '../assets/misc/projects/first-website.png';
+// @ts-ignore
 import kilburnazon from '../assets/misc/projects/kilburnazon-crud.png';
+// @ts-ignore
 import marss from '../assets/misc/projects/marss.png';
+// @ts-ignore
 import bootcamp from '../assets/misc/projects/sts-bootcamp.png';
+// @ts-ignore
 import unihack21 from '../assets/misc/projects/unihack-21.png';
+// @ts-ignore
 import unihack22 from '../assets/misc/projects/unihack-22.png';
+// @ts-ignore
 import spotify from '../assets/misc/projects/spotify-api.png';
 
 

@@ -18,14 +18,14 @@ const Social = () => {
             </div>
             {/* <img src={gif} loop={true} className='w-1/3 md:w-2/3 lg:w-1/3 lg:max-h-[190px] object-cover'/> */}
             <div className='flex flex-col justify-around items-center w-1/3 md:w-2/3 lg:w-1/3 border-y-4 border-r-4 border-secondary'>
-                <video autoPlay loop muted className="w-32 h-32 sm:w-64 rotate-90 md:rotate-0 lg:hidden">
-                    <source src={globe} type="video/mp4" />
+                <video playsInline autoPlay loop muted className="w-32 h-32 sm:w-64 rotate-90 md:rotate-0 lg:hidden">
+                    <source src={globe} type="video/webm" />
                 </video>
-                <video autoPlay loop muted className="w-32 h-32 sm:w-64 rotate-90 md:rotate-0 lg:hidden">
-                    <source src={globe} type="video/mp4" />
+                <video playsInline autoPlay loop muted className="w-32 h-32 sm:w-64 rotate-90 md:rotate-0 lg:hidden">
+                    <source src={globe} type="video/webm" />
                 </video>
-                <video autoPlay loop muted className="w-32 h-32 sm:w-64 rotate-90 md:rotate-0">
-                    <source src={globe} type="video/mp4" />
+                <video playsInline autoPlay loop muted className="w-32 h-32 sm:w-64 rotate-90 md:rotate-0">
+                    <source src={globe} type="video/webm" />
                 </video>
             </div>
         </div>

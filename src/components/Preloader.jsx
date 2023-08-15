@@ -25,8 +25,8 @@ const Preloader = ({ duration }) => {
             // animate={{ opacity: 1 }}
             exit={{ opacity: 0, transition: { duration: 2 } }}
           >
-            <video autoPlay loop muted className="w-64 h-64">
-              <source src={globe} type="video/mp4" />
+            <video playsInline autoPlay loop muted className="w-64 h-64">
+              <source src={globe} type="video/webm" />
             </video>
           </motion.div>
         )}
