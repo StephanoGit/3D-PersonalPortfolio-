@@ -1,7 +1,6 @@
 import React from 'react';
 import Marquee from "react-fast-marquee";
 
-import globe from '../assets/misc/globe.webm';
 import {ReactComponent as Arrow} from '../assets/caret-back-outline.svg';
 import SectionWrapper from '../hoc/SectionWrapper';
 

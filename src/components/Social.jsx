@@ -3,9 +3,7 @@ import React from 'react';
 import githubQR from '../assets/qrs/github-qr.svg';
 import instagramQR from '../assets/qrs/instagram-qr.svg';
 import linkedinQR from '../assets/qrs/linkedin-qr.svg';
-import gif from '../assets/misc/giphy.gif';
-import globe from '../assets/misc/globe.webm';
-
+import globe from '../assets/misc/globe.mp4';
 
 
 const Social = () => {
@@ -16,16 +14,15 @@ const Social = () => {
                 <a href='https://www.instagram.com/raduu_popovici' target='_blank' className='flex justify-center'><img src={instagramQR} className='w-[150px] object-contain cursor-pointer'/></a>
                 <a href='https://www.linkedin.com/in/radustefanpopovici/' target='_blank' className='flex justify-center'><img src={linkedinQR} className='w-[150px] object-contain cursor-pointer'/></a>
             </div>
-            {/* <img src={gif} loop={true} className='w-1/3 md:w-2/3 lg:w-1/3 lg:max-h-[190px] object-cover'/> */}
             <div className='flex flex-col justify-around items-center w-1/3 md:w-2/3 lg:w-1/3 border-y-4 border-r-4 border-secondary'>
                 <video playsInline autoPlay loop muted className="w-32 h-32 sm:w-64 rotate-90 md:rotate-0 lg:hidden">
-                    <source src={globe} type="video/webm" />
+                    <source src={globe} type="video/mp4" />
                 </video>
                 <video playsInline autoPlay loop muted className="w-32 h-32 sm:w-64 rotate-90 md:rotate-0 lg:hidden">
-                    <source src={globe} type="video/webm" />
+                    <source src={globe} type="video/mp4" />
                 </video>
                 <video playsInline autoPlay loop muted className="w-32 h-32 sm:w-64 rotate-90 md:rotate-0">
-                    <source src={globe} type="video/webm" />
+                    <source src={globe} type="video/mp4" />
                 </video>
             </div>
         </div>

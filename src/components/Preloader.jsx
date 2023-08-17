@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-import globe from '../assets/misc/globe.webm';
+import globe from '../assets/misc/globe.mp4';
 
 const Preloader = ({ duration }) => {
     const [showPreloader, setShowPreloader] = useState(true);
@@ -26,7 +26,7 @@ const Preloader = ({ duration }) => {
             exit={{ opacity: 0, transition: { duration: 2 } }}
           >
             <video playsInline autoPlay loop muted className="w-64 h-64">
-              <source src={globe} type="video/webm" />
+              <source src={globe} type="video/mp4" />
             </video>
           </motion.div>
         )}
